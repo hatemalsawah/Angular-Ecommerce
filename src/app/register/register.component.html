@@ -1,5 +1,6 @@
 <div class="container py-5">
     <h2 class="mb-5">Registration Form</h2>
+    <div class="alert alert-danger" *ngIf="errorFromSignUp">{{errorFromSignUp}}</div>
     <form [formGroup]="registerForm" (ngSubmit)="registerUser(registerForm)" class="w-75 mx-auto">
 <div class="form-group mb-4">
     <label for="first_name"> First Name</label>
